@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://ecm5vhjq5tiy"]
+
+[ext_resource type="PackedScene" uid="uid://bb2ecfe3b0afw" path="res://player.tscn" id="1_ig7tw"]
+
+[node name="main" type="Node2D"]
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_use_anchors_ = true
+
+[node name="car" parent="." instance=ExtResource("1_ig7tw")]
+position = Vector2(104, 115)
