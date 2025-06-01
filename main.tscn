@@ -13,3 +13,5 @@ metadata/_edit_use_anchors_ = true
 
 [node name="car" parent="." instance=ExtResource("1_ig7tw")]
 position = Vector2(104, 115)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
