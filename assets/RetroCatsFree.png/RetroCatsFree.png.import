@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://btltou6shg6wj"
-path="res://.godot/imported/RetroCatsFree.png-88108465f9cb02a1ad01d9023048e4d9.ctex"
+path="res://.godot/imported/RetroCatsFree.png-454503eaffe24c37e319636a8c82c5b7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://RetroCatsFree.png/RetroCatsFree.png"
-dest_files=["res://.godot/imported/RetroCatsFree.png-88108465f9cb02a1ad01d9023048e4d9.ctex"]
+source_file="res://assets/RetroCatsFree.png/RetroCatsFree.png"
+dest_files=["res://.godot/imported/RetroCatsFree.png-454503eaffe24c37e319636a8c82c5b7.ctex"]
 
 [params]
 

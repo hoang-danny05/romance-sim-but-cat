@@ -1,0 +1,96 @@
+[gd_scene load_steps=8 format=3 uid="uid://ecm5vhjq5tiy"]
+
+[ext_resource type="PackedScene" uid="uid://bb2ecfe3b0afw" path="res://scenes/player.tscn" id="1_b7bjq"]
+[ext_resource type="Texture2D" uid="uid://cvfexrq2vmyui" path="res://assets/Nature Landscapes Free Pixel Art/nature_3/1.png" id="2_x41ug"]
+[ext_resource type="Texture2D" uid="uid://7itsp3iftt2p" path="res://assets/Nature Landscapes Free Pixel Art/nature_3/2.png" id="3_qx38i"]
+[ext_resource type="Texture2D" uid="uid://duqcccflp57jx" path="res://assets/Nature Landscapes Free Pixel Art/nature_3/3.png" id="4_ijwh1"]
+[ext_resource type="Texture2D" uid="uid://cm4sco7fjl2ny" path="res://assets/Nature Landscapes Free Pixel Art/nature_3/4.png" id="5_4yfo0"]
+[ext_resource type="Script" uid="uid://bb36bgj0eihd5" path="res://scenes/side_scroll.gd" id="6_ecgw8"]
+
+[sub_resource type="Curve2D" id="Curve2D_x41ug"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 577, 324, 0, 0, 0, 0, 1500, 324)
+}
+point_count = 2
+
+[node name="grass_scene" type="Node2D"]
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_use_anchors_ = true
+
+[node name="car" parent="." instance=ExtResource("1_b7bjq")]
+position = Vector2(248, 568)
+
+[node name="Path2D" type="Path2D" parent="."]
+curve = SubResource("Curve2D_x41ug")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
+position = Vector2(577, 324)
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="Parallax2D" type="Parallax2D" parent="ParallaxBackground"]
+scale = Vector2(1, 1.01085)
+scroll_scale = Vector2(1.01, 1)
+repeat_size = Vector2(1152, 0)
+autoscroll = Vector2(2, 0)
+repeat_times = 5
+
+[node name="sky" type="Sprite2D" parent="ParallaxBackground/Parallax2D"]
+z_index = -256
+position = Vector2(576, 324)
+scale = Vector2(2, 2)
+texture = ExtResource("2_x41ug")
+
+[node name="Parallax2D2" type="Parallax2D" parent="ParallaxBackground"]
+scroll_scale = Vector2(1.2, 1)
+repeat_size = Vector2(1152, 0)
+repeat_times = 5
+
+[node name="mountain" type="Sprite2D" parent="ParallaxBackground/Parallax2D2"]
+z_index = -256
+position = Vector2(576, 402)
+scale = Vector2(2.0001, 2.00018)
+texture = ExtResource("3_qx38i")
+
+[node name="Parallax2D3" type="Parallax2D" parent="ParallaxBackground"]
+scroll_scale = Vector2(1.2, 1)
+repeat_size = Vector2(1152, 0)
+
+[node name="fog?" type="Sprite2D" parent="ParallaxBackground/Parallax2D3"]
+z_index = -256
+position = Vector2(576, 330)
+scale = Vector2(2, 2)
+texture = ExtResource("4_ijwh1")
+
+[node name="Parallax2D5" type="Parallax2D" parent="ParallaxBackground"]
+scroll_scale = Vector2(1.9, 1)
+repeat_size = Vector2(1152, 0)
+repeat_times = 5
+
+[node name="trees" type="Sprite2D" parent="ParallaxBackground/Parallax2D5"]
+z_index = -256
+position = Vector2(576, 324)
+scale = Vector2(2, 2)
+texture = ExtResource("5_4yfo0")
+
+[node name="debugRect" type="ColorRect" parent="."]
+visible = false
+offset_left = 184.0
+offset_top = 604.0
+offset_right = 284.0
+offset_bottom = 704.0
+scale = Vector2(1.30538, 2.26348)
+color = Color(1, 0.0392157, 0.117647, 1)
+
+[node name="Camera2D" type="Camera2D" parent="." node_paths=PackedStringArray("player")]
+position = Vector2(576, 326)
+scale = Vector2(0.987574, 1.00527)
+drag_left_margin = 0.4
+drag_right_margin = 0.4
+script = ExtResource("6_ecgw8")
+player = NodePath("../car")

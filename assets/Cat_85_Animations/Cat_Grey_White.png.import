@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c6r3s7k58qh7"
-path="res://.godot/imported/Cat_Grey_White.png-10780fd3436383c7ac3868b22bc7a207.ctex"
+path="res://.godot/imported/Cat_Grey_White.png-71dc2836b3b1fcd4a34e5764e1b14fcc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Cat_85_Animations/Cat_85_Animations/Cat_Grey_White.png"
-dest_files=["res://.godot/imported/Cat_Grey_White.png-10780fd3436383c7ac3868b22bc7a207.ctex"]
+source_file="res://assets/Cat_85_Animations/Cat_Grey_White.png"
+dest_files=["res://.godot/imported/Cat_Grey_White.png-71dc2836b3b1fcd4a34e5764e1b14fcc.ctex"]
 
 [params]
 

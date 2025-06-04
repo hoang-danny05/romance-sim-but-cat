@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cjd55cs3057es"
-path="res://.godot/imported/FreeDemo.png-1cf87d4f8c6d98aed8ec01b37f52410e.ctex"
+path="res://.godot/imported/FreeDemo.png-799b266975b809d18f942652327a5c1e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://PetMobileFree/PetMobileFree/FreeDemo.png"
-dest_files=["res://.godot/imported/FreeDemo.png-1cf87d4f8c6d98aed8ec01b37f52410e.ctex"]
+source_file="res://assets/PetMobileFree/FreeDemo.png"
+dest_files=["res://.godot/imported/FreeDemo.png-799b266975b809d18f942652327a5c1e.ctex"]
 
 [params]
 

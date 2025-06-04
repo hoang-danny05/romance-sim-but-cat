@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://da36ymcxjhj5a"
-path="res://.godot/imported/GoldenRetriver.png-20723922f5ceb23c3e69714021db5bd0.ctex"
+path="res://.godot/imported/GoldenRetriver.png-21e5bcbcf2ad7d291464bf149cbe6b2f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://PetMobileFree/PetMobileFree/GoldenRetriver.png"
-dest_files=["res://.godot/imported/GoldenRetriver.png-20723922f5ceb23c3e69714021db5bd0.ctex"]
+source_file="res://assets/PetMobileFree/GoldenRetriver.png"
+dest_files=["res://.godot/imported/GoldenRetriver.png-21e5bcbcf2ad7d291464bf149cbe6b2f.ctex"]
 
 [params]
 

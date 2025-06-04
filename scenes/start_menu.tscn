@@ -1,0 +1,54 @@
+[gd_scene load_steps=5 format=3 uid="uid://ls64eb3r145v"]
+
+[ext_resource type="Script" uid="uid://c2y0ygpxq70xe" path="res://scenes/start_menu.gd" id="1_thu50"]
+[ext_resource type="Texture2D" uid="uid://ch2vkcfxvf3wc" path="res://assets/Nature Landscapes Free Pixel Art/nature_2/origbig.png" id="2_m7x51"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ndybt"]
+font_size = 74
+font_color = Color(0.969254, 0.377857, 0.430659, 1)
+shadow_size = 8
+shadow_color = Color(0.56802, 0.179811, 0.17032, 1)
+
+[sub_resource type="Theme" id="Theme_jwbto"]
+default_font_size = 32
+
+[node name="StartMenu" type="Node2D"]
+script = ExtResource("1_thu50")
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="DefaultScreen" type="Control" parent="UI"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="title, nerd!" type="Label" parent="UI/DefaultScreen"]
+layout_mode = 2
+offset_right = 1152.0
+offset_bottom = 577.0
+text = "Cat game, but with a twist??"
+label_settings = SubResource("LabelSettings_ndybt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="StartButton" type="Button" parent="UI/DefaultScreen"]
+layout_mode = 0
+offset_left = 415.0
+offset_top = 393.0
+offset_right = 665.0
+offset_bottom = 446.0
+tooltip_text = "the start button. hurry up and press me!"
+theme = SubResource("Theme_jwbto")
+text = "Start"
+
+[node name="prettyBackground" type="Sprite2D" parent="."]
+z_index = -256
+position = Vector2(576, 320)
+scale = Vector2(2, 2)
+texture = ExtResource("2_m7x51")
+
+[connection signal="pressed" from="UI/DefaultScreen/StartButton" to="." method="_on_start_button_pressed"]

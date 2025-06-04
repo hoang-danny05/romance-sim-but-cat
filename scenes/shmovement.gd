@@ -1,6 +1,7 @@
 extends CharacterBody2D
+class_name Player
 
-var speed = 100.0
+var speed = 200.0
 var acceleration = 10
 var decceleration = 20
 
@@ -11,9 +12,17 @@ var is_idle = true
 @onready var sitting_timer : Timer = $sitting_timer
 
 
+func _ready() -> void:
+	position = Globals.player_destination
+	pass
+
+
+
+
 func _physics_process(delta: float) -> void:
 	var target_vel := Vector2()
 	var movement = Input.get_vector("left", "right", "none", "none")
+	
 	
 	is_idle = abs(movement.x) <= 0.1
 	# animation case: sitting
@@ -47,10 +56,11 @@ func _physics_process(delta: float) -> void:
 	velocity = target_vel
 	move_and_slide()
 
+
+
 func _on_sitting_timer_timeout() -> void:
 	animations.play("idle_to_sit")
 	sitting_timer.stop()
-
 
 
 func _on_animated_sprite_2d_animation_finished() -> void:

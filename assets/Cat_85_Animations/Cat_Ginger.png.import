@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cyqllbxqpy4v"
-path="res://.godot/imported/Cat_Ginger.png-02fdaa5061dc8754963fbd8d7fd4d11d.ctex"
+path="res://.godot/imported/Cat_Ginger.png-fc5067e3bdd58093108d5f374dfbec32.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Cat_85_Animations/Cat_85_Animations/Cat_Ginger.png"
-dest_files=["res://.godot/imported/Cat_Ginger.png-02fdaa5061dc8754963fbd8d7fd4d11d.ctex"]
+source_file="res://assets/Cat_85_Animations/Cat_Ginger.png"
+dest_files=["res://.godot/imported/Cat_Ginger.png-fc5067e3bdd58093108d5f374dfbec32.ctex"]
 
 [params]
 

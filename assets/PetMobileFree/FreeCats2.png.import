@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bd2aiia4klgkb"
-path="res://.godot/imported/FreeCats2.png-1f589da3f97dfec29fde196a9d361480.ctex"
+path="res://.godot/imported/FreeCats2.png-c53ef869872501784f3b80efa6975174.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://PetMobileFree/PetMobileFree/FreeCats2.png"
-dest_files=["res://.godot/imported/FreeCats2.png-1f589da3f97dfec29fde196a9d361480.ctex"]
+source_file="res://assets/PetMobileFree/FreeCats2.png"
+dest_files=["res://.godot/imported/FreeCats2.png-c53ef869872501784f3b80efa6975174.ctex"]
 
 [params]
 

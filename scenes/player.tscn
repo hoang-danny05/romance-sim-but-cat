@@ -1,7 +1,7 @@
 [gd_scene load_steps=101 format=3 uid="uid://bb2ecfe3b0afw"]
 
-[ext_resource type="Texture2D" uid="uid://cyqllbxqpy4v" path="res://Cat_85_Animations/Cat_85_Animations/Cat_Ginger.png" id="1_4flbx"]
-[ext_resource type="Script" uid="uid://bfs7o0e148q3s" path="res://shmovement.gd" id="1_onrkg"]
+[ext_resource type="Texture2D" uid="uid://cyqllbxqpy4v" path="res://assets/Cat_85_Animations/Cat_Ginger.png" id="1_4flbx"]
+[ext_resource type="Script" uid="uid://bfs7o0e148q3s" path="res://scenes/shmovement.gd" id="1_onrkg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4flbx"]
 size = Vector2(137, 88)

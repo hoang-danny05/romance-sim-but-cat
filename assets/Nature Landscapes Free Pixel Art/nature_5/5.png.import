@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://u8g1d8wsa80a"
-path="res://.godot/imported/5.png-f4fc2ddeb2710900f086fc186d011524.ctex"
+path="res://.godot/imported/5.png-54531d6055873a1a60d1393b3106c55c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Nature Landscapes Free Pixel Art/nature_5/5.png"
-dest_files=["res://.godot/imported/5.png-f4fc2ddeb2710900f086fc186d011524.ctex"]
+source_file="res://assets/Nature Landscapes Free Pixel Art/nature_5/5.png"
+dest_files=["res://.godot/imported/5.png-54531d6055873a1a60d1393b3106c55c.ctex"]
 
 [params]
 
