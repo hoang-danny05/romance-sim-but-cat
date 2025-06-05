@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://b42y73651vvbc"]
+
+[ext_resource type="Texture2D" uid="uid://byfq4ye3yccit" path="res://assets/interact_prompt.png" id="1_ri37h"]
+[ext_resource type="Script" uid="uid://cmceeljq1bvfp" path="res://components/placeholder_prompt.gd" id="1_sjukl"]
+
+[node name="PlaceholderPrompt" type="Sprite2D"]
+texture = ExtResource("1_ri37h")
+script = ExtResource("1_sjukl")

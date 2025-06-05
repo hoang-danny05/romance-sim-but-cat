@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://ecm5vhjq5tiy"]
+[gd_scene load_steps=12 format=3 uid="uid://ecm5vhjq5tiy"]
 
 [ext_resource type="PackedScene" uid="uid://bb2ecfe3b0afw" path="res://scenes/player.tscn" id="1_b7bjq"]
 [ext_resource type="Texture2D" uid="uid://cvfexrq2vmyui" path="res://assets/Nature Landscapes Free Pixel Art/nature_3/1.png" id="2_x41ug"]
@@ -6,12 +6,18 @@
 [ext_resource type="Texture2D" uid="uid://duqcccflp57jx" path="res://assets/Nature Landscapes Free Pixel Art/nature_3/3.png" id="4_ijwh1"]
 [ext_resource type="Texture2D" uid="uid://cm4sco7fjl2ny" path="res://assets/Nature Landscapes Free Pixel Art/nature_3/4.png" id="5_4yfo0"]
 [ext_resource type="Script" uid="uid://bb36bgj0eihd5" path="res://scenes/side_scroll.gd" id="6_ecgw8"]
+[ext_resource type="PackedScene" uid="uid://sevleejdv0ab" path="res://components/InteractibleComponent.tscn" id="7_7q1td"]
+[ext_resource type="PackedScene" uid="uid://b42y73651vvbc" path="res://components/PlaceholderPrompt.tscn" id="8_7g5gu"]
+[ext_resource type="PackedScene" uid="uid://bfvfmy8avvd5q" path="res://scenes/NpcCat.tscn" id="10_r4sly"]
 
 [sub_resource type="Curve2D" id="Curve2D_x41ug"]
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 577, 324, 0, 0, 0, 0, 1500, 324)
 }
 point_count = 2
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7g5gu"]
+size = Vector2(141, 134)
 
 [node name="grass_scene" type="Node2D"]
 
@@ -23,7 +29,7 @@ offset_bottom = 40.0
 metadata/_edit_use_anchors_ = true
 
 [node name="car" parent="." instance=ExtResource("1_b7bjq")]
-position = Vector2(248, 568)
+position = Vector2(222, 568)
 
 [node name="Path2D" type="Path2D" parent="."]
 curve = SubResource("Curve2D_x41ug")
@@ -94,3 +100,16 @@ drag_left_margin = 0.4
 drag_right_margin = 0.4
 script = ExtResource("6_ecgw8")
 player = NodePath("../car")
+
+[node name="InteractibleComponent" parent="." node_paths=PackedStringArray("interact_prompt") instance=ExtResource("7_7q1td")]
+interact_prompt = NodePath("InteractionCollisionShape/PlaceholderPrompt")
+
+[node name="InteractionCollisionShape" type="CollisionShape2D" parent="InteractibleComponent"]
+position = Vector2(808, 600)
+shape = SubResource("RectangleShape2D_7g5gu")
+
+[node name="PlaceholderPrompt" parent="InteractibleComponent/InteractionCollisionShape" instance=ExtResource("8_7g5gu")]
+position = Vector2(0, -58)
+
+[node name="NpcCat" parent="." instance=ExtResource("10_r4sly")]
+position = Vector2(469, 567)
